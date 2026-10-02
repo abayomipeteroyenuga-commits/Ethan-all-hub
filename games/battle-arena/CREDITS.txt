@@ -1,0 +1,4 @@
+Soldier character: Three.js examples Soldier.glb, animated Mixamo Vanguard character. Source: https://threejs.org/examples/models/gltf/Soldier.glb
+Three.js and example loaders/utilities: MIT license, see THREE-LICENSE.txt.
+
+Lobby scout portrait: original AI-generated game artwork.

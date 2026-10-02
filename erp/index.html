@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ETHAN ERP LMS v9.9 COMPUTER APPRECIATION FULL VISUAL MANUAL -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b2a67" />
+  <meta name="description" content="ETHAN ERP & LMS — Education management and learning platform powered by Ethan Digital Academy." />
+  <title>Ethan Digital Academy ERP</title>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app">
+    <section id="authScreen" class="auth-shell modern-auth hidden">
+      <header class="public-header">
+        <a class="public-brand" href="#" aria-label="Ethan ERP & LMS home">
+          <img src="assets/ethan-logo.jpeg" alt="Ethan Digital Academy logo" />
+          <span><strong>ETHAN</strong><small>ERP & LMS</small></span>
+        </a>
+        <div class="public-header-actions">
+          <span class="secure-pill">Secure Learning Portal</span>
+          <button type="button" class="header-signin" data-jump-auth="signin">Sign In</button>
+        </div>
+      </header>
+
+      <div class="auth-main">
+        <div class="auth-brand-panel">
+          <div class="auth-hero-inner">
+            <span class="eyebrow hero-kicker">ETHAN DIGITAL ACADEMY</span>
+            <h1>One connected workspace for <span>learning, administration and academy operations.</span></h1>
+            <p class="hero-lead">A professional Ethan Digital Academy workspace for learner records, course delivery, staff operations, verified payments, academic progress and controlled learning access.</p>
+
+            <div class="hero-benefits">
+              <div class="benefit-item"><span class="benefit-icon">✓</span><div><strong>Role-based portals</strong><small>Super Admin, Admin, Instructor, Student, Professional and Business Owner</small></div></div>
+              <div class="benefit-item"><span class="benefit-icon">✓</span><div><strong>Payment-gated learning</strong><small>Courses and videos are allocated only after approval</small></div></div>
+              <div class="benefit-item"><span class="benefit-icon">✓</span><div><strong>Academic operations</strong><small>Courses, attendance, fees, reports and student progress</small></div></div>
+            </div>
+
+            
+          </div>
+        </div>
+
+        <div class="auth-card-wrap">
+          <div class="auth-card professional-card">
+            <div class="auth-card-brand">
+              <img src="assets/ethan-logo.jpeg" alt="Ethan Digital Academy" />
+              <div><strong>Welcome to Ethan</strong><small>ERP & Learning Management System</small></div>
+            </div>
+
+            <div class="auth-tabs">
+  <button class="auth-tab active" data-auth-tab="signin">Sign In</button>
+  <button class="auth-tab" data-auth-tab="signup">Create Account</button>
+</div>
+
+            <form id="signinForm" class="auth-form">
+              <div class="auth-heading"><h2>Sign in to your portal</h2><p>Use your registered account. Your role will open the correct workspace automatically.</p></div>
+              <label>Email address
+                <input type="email" id="signinEmail" required autocomplete="email" placeholder="name@example.com" />
+              </label>
+              <label>Password
+                <div class="password-field">
+                  <input type="password" id="signinPassword" required autocomplete="current-password" placeholder="Enter your password" />
+                  <button type="button" class="text-btn toggle-password" data-target="signinPassword">Show</button>
+                </div>
+              </label>
+              <div class="form-row between auth-options">
+                <label class="checkbox"><input type="checkbox" id="rememberMe" /> Remember me</label>
+                <button type="button" id="forgotPasswordBtn" class="text-btn">Forgot password?</button>
+              </div>
+              <button type="submit" class="primary-btn full auth-submit">Sign In Securely <span>→</span></button>
+              <p id="signinMessage" class="form-message"></p>
+              
+            </form>
+
+            <form id="signupForm" class="auth-form hidden">
+              <div class="auth-heading">
+                <h2>Create your account</h2>
+                <p>Register as a Student, Professional or Business Owner.</p>
+              </div>
+              <div class="grid-2">
+                <label>First name<input type="text" id="firstName" required placeholder="First name" /></label>
+                <label>Last name<input type="text" id="lastName" required placeholder="Last name" /></label>
+              </div>
+              <label>Email address<input type="email" id="signupEmail" required autocomplete="email" placeholder="name@example.com" /></label>
+              <label>Phone number<input type="tel" id="signupPhone" required placeholder="Phone number" /></label>
+              <label>Register as
+                <select id="signupRole" required>
+                  <option value="student">Student</option>
+                  <option value="professional">Professional</option>
+                  <option value="business_owner">Business Owner</option>
+                </select>
+              </label>
+              <label>Password
+                <div class="password-field">
+                  <input type="password" id="signupPassword" required minlength="8" autocomplete="new-password" placeholder="Minimum 8 characters" />
+                  <button type="button" class="text-btn toggle-password" data-target="signupPassword">Show</button>
+                </div>
+              </label>
+              <label>Confirm password<input type="password" id="confirmPassword" required minlength="8" autocomplete="new-password" placeholder="Repeat password" /></label>
+              <label class="checkbox terms-row"><input type="checkbox" id="termsCheck" required /> I agree to the terms and privacy policy.</label>
+              <button type="submit" class="primary-btn full auth-submit">Create Account <span>→</span></button>
+              <p id="signupMessage" class="form-message"></p>
+            </form>
+
+            <div class="auth-footer-line">Powered by <strong>Ethan Digital Academy</strong></div>
+          </div>
+</div>
+<section class="course-catalogue-section" id="courseCatalogue">
+  <div class="catalogue-head">
+    <div>
+      <span class="eyebrow">EXPLORE BEFORE YOU ENROL</span>
+      <h2>Find Your Digital Course</h2>
+      <p>Click Browse Courses, choose a course from the dropdown, and read a short overview before enrolling.</p>
+    </div>
+    <div class="catalogue-search-wrap">
+      <div class="catalogue-actions"><label class="currency-control">Currency<select id="catalogueCurrencySelect"><option value="NGN">₦ Naira</option><option value="USD">$ USD</option><option value="GBP">£ Pounds</option><option value="EUR">€ EUR</option></select></label><button type="button" class="catalogue-browse-btn" id="browseCoursesBtn">Browse Courses</button></div>
+    </div>
+  </div>
+
+  <div class="catalogue-dropdown-wrap hidden" id="catalogueDropdownWrap">
+    <label for="courseCatalogueSelect">Choose a course</label>
+    <select id="courseCatalogueSelect">
+      <option value="">Select one of the 100 courses</option>
+    </select>
+  </div>
+
+  <div class="catalogue-brief-panel hidden" id="catalogueBriefPanel">
+    <span class="eyebrow">COURSE OVERVIEW</span>
+    <h3 id="courseBriefTitle"></h3>
+    <p id="courseBriefText"></p><div class="course-price-row"><span>Course Fee</span><strong id="courseBriefPrice"></strong></div>
+    <div class="course-access-note">Full lessons and videos become available after payment verification and course allocation.</div>
+  </div>
+</section>
+</section>
+
+<section id="portal" class="portal">
+      <aside class="sidebar" id="sidebar">
+        <div class="sidebar-brand">
+          <img src="assets/ethan-logo.jpeg" alt="Ethan logo" />
+          <div>
+            <strong>ETHAN</strong>
+            <small>ERP & LMS</small>
+          </div>
+        </div>
+        <nav id="sideNav"></nav>
+        <div class="sidebar-footer"><a href="../" class="nav-item">← Back to Ethan Hub</a>
+          <button id="logoutBtn" class="nav-item logout">↪ <span>Logout</span></button>
+          <small>Powered by Ethan Digital Academy</small>
+        </div>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <div class="top-left">
+            <button id="menuBtn" class="icon-btn">☰</button>
+            <div>
+              <span class="eyebrow" id="pageEyebrow">PORTAL</span>
+              <h2 id="pageTitle">Dashboard</h2>
+            </div>
+          </div>
+          <div class="top-actions">
+            <div class="search-wrap">
+              <input id="globalSearch" type="search" placeholder="Search portal..." />
+            </div>
+            <button id="notificationBtn" class="icon-btn notif-btn">🔔<span id="notifBadge">3</span></button>
+            <div class="user-pill">
+              <div class="avatar" id="userAvatar">EP</div>
+              <div>
+                <strong id="userName">Ethan User</strong>
+                <small id="userRole">Student</small>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <div id="content" class="content"></div>
+      </main>
+
+      <div id="notificationPanel" class="notification-panel hidden">
+        <div class="panel-head">
+          <h3>Notifications</h3>
+          <button id="closeNotif" class="icon-btn">✕</button>
+        </div>
+        <div id="notificationList"></div>
+      </div>
+    </section>
+  </div>
+
+  <template id="statCardTemplate">
+    <div class="stat-card">
+      <div class="stat-icon"></div>
+      <div>
+        <small class="stat-label"></small>
+        <strong class="stat-value"></strong>
+        <span class="stat-sub"></span>
+      </div>
+    </div>
+  </template>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="config.js"></script>
+  <script src="supabase-client.js"></script>
+  <script src="course-narration-data.js"></script>
+  <script src="app.js"></script>
+  <script src="operations.js"></script>
+  <script src="erp-modules.js"></script>
+  <script src="erp-upgrade.js"></script>
+
+
+
+</body>
+</html>
