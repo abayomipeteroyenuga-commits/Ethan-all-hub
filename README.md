@@ -97,3 +97,11 @@ Added Ethan Tutor AI (`https://tutor.ethandigitalacademy.org`) to the Hub regist
 - Every launcher has a distinct manifest identity and standalone start URL.
 - Open actions continue to launch the live app in a separate tab/window.
 - External apps still require their own origin-level manifest/service worker for fully native offline PWA behavior; Hub launchers provide installable access from the Hub origin.
+
+
+## v12.6 update
+- Hub now contains 23 app cards.
+- Added Open Browser: https://browser.ethandigitalacademy.org
+- Added Ethan Project Studio: https://projects.ethandigitalacademy.org
+- Both have Hub PWA install launchers.
+- All app Open actions continue to launch in a separate browser tab/window.
