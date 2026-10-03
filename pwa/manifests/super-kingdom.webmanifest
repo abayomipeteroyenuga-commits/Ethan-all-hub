@@ -1,0 +1,23 @@
+{
+  "id": "/pwa/?app=super-kingdom",
+  "name": "Super Kingdom",
+  "short_name": "Super Kingdom",
+  "description": "Installable Ethan Hub launcher for Super Kingdom.",
+  "start_url": "/pwa/?app=super-kingdom",
+  "scope": "/pwa/",
+  "display": "standalone",
+  "background_color": "#f5f8fc",
+  "theme_color": "#071d49",
+  "icons": [
+    {
+      "src": "/pwa/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/pwa/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

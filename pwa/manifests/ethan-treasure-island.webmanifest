@@ -1,0 +1,23 @@
+{
+  "id": "/pwa/?app=ethan-treasure-island",
+  "name": "Ethan Treasure Island",
+  "short_name": "Ethan Treasure Island",
+  "description": "Installable Ethan Hub launcher for Ethan Treasure Island.",
+  "start_url": "/pwa/?app=ethan-treasure-island",
+  "scope": "/pwa/",
+  "display": "standalone",
+  "background_color": "#f5f8fc",
+  "theme_color": "#071d49",
+  "icons": [
+    {
+      "src": "/pwa/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/pwa/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

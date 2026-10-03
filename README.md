@@ -61,3 +61,39 @@ Deploy the `ethan-sso` Edge Function in this same project before relying on one-
 
 ## v6.5
 Added Ethan Tutor AI (`https://tutor.ethandigitalacademy.org`) to the Hub registry as HUB ACCESS. Dashboard count updated to 14 apps. Existing Ethan Cloud SSO behavior is unchanged.
+
+
+## Battle Arena update
+
+18 apps in the registry, including the new bundled ETHAN BATTLE ARENA. Existing ERP and Wave Rush preserved. See BATTLE-ARENA-DEPLOY.md.
+
+
+## v12.1 verification update
+- Verified Ethan Kids: https://kids.ethandigitalacademy.org
+- Verified Ethan Creator: https://create.ethandigitalacademy.org
+- Both are visible dashboard cards.
+- Ethan Kids now opens as Hub Access instead of requiring the unfinished SSO handoff.
+- The Hub app counter and build marker are derived from the actual registry length.
+- Current unique dashboard registry: 18 apps.
+
+
+## v12.4 Hub update
+- Hub now renders 22 unique app cards.
+- Added Neon Bike Ride, Ethan Galaxy Defender, Ethan Treasure Island and Ethan Skybound Quest.
+- Wave Rush and ETHAN BATTLE ARENA remain included.
+- Every Hub card opens its destination in a separate browser tab/window (subject to browser popup settings).
+
+
+### v12.4 packaging
+- Repackaged to exactly 91 files for a lighter GitHub/Vercel deployment package.
+- Hub remains 21 apps.
+- ERP is not exposed as a Hub app.
+- All Hub cards remain HUB ACCESS and open in separate tabs/windows.
+
+
+## v12.5 PWA upgrade
+- Ethan Hub is installable as a PWA.
+- All 21 Hub app cards include an Install action opening an installable Ethan launcher.
+- Every launcher has a distinct manifest identity and standalone start URL.
+- Open actions continue to launch the live app in a separate tab/window.
+- External apps still require their own origin-level manifest/service worker for fully native offline PWA behavior; Hub launchers provide installable access from the Hub origin.

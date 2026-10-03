@@ -1,0 +1,23 @@
+{
+  "id": "/pwa/?app=ethan-skybound-quest",
+  "name": "Ethan Skybound Quest",
+  "short_name": "Ethan Skybound Quest",
+  "description": "Installable Ethan Hub launcher for Ethan Skybound Quest.",
+  "start_url": "/pwa/?app=ethan-skybound-quest",
+  "scope": "/pwa/",
+  "display": "standalone",
+  "background_color": "#f5f8fc",
+  "theme_color": "#071d49",
+  "icons": [
+    {
+      "src": "/pwa/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/pwa/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
