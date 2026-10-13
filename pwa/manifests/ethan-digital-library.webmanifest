@@ -1,0 +1,30 @@
+{
+  "id": "/pwa/?app=ethan-digital-library",
+  "name": "Ethan Digital Library",
+  "short_name": "Ethan Library",
+  "description": "Learning resource library for reading, research, annotations, collections and citations.",
+  "start_url": "/pwa/?app=ethan-digital-library",
+  "scope": "/pwa/",
+  "display": "standalone",
+  "display_override": [
+    "standalone",
+    "minimal-ui"
+  ],
+  "background_color": "#f5f8fc",
+  "theme_color": "#071d49",
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "/pwa/icons/ethan-digital-library-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa/icons/ethan-digital-library-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

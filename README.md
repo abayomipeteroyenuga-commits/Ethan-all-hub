@@ -105,3 +105,12 @@ Added Ethan Tutor AI (`https://tutor.ethandigitalacademy.org`) to the Hub regist
 - Added Ethan Project Studio: https://projects.ethandigitalacademy.org
 - Both have Hub PWA install launchers.
 - All app Open actions continue to launch in a separate browser tab/window.
+
+
+## v12.7 — Complete-build PWA update
+- Updated the Hub registry from 23 to 26 app cards.
+- Added Ethan AI Lab (`ailab.ethandigitalacademy.org`), Ethan Digital Library (`library.ethandigitalacademy.org`) and Ethan Cyber Lab (`cyberlab.ethandigitalacademy.org`).
+- Added unique standalone launcher manifests and dedicated 192×192 / 512×512 icons for each new app.
+- Updated the launcher service worker to cache app manifests and launcher icons.
+- Each new specialist app is also packaged separately as its own installable PWA.
+- External target domains must be deployed over HTTPS before their Open App actions can reach the live apps.

@@ -1,0 +1,30 @@
+{
+  "id": "/pwa/?app=ethan-ai-lab",
+  "name": "Ethan AI Lab",
+  "short_name": "AI Lab",
+  "description": "Professional AI experimentation workspace for prompts, evaluations, datasets, structured outputs, tools and agents.",
+  "start_url": "/pwa/?app=ethan-ai-lab",
+  "scope": "/pwa/",
+  "display": "standalone",
+  "display_override": [
+    "standalone",
+    "minimal-ui"
+  ],
+  "background_color": "#f5f8fc",
+  "theme_color": "#071d49",
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "/pwa/icons/ethan-ai-lab-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa/icons/ethan-ai-lab-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

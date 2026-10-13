@@ -1,0 +1,30 @@
+{
+  "id": "/pwa/?app=ethan-cyber-lab",
+  "name": "Ethan Cyber Lab",
+  "short_name": "Cyber Lab",
+  "description": "Safe defensive cybersecurity training and simulations.",
+  "start_url": "/pwa/?app=ethan-cyber-lab",
+  "scope": "/pwa/",
+  "display": "standalone",
+  "display_override": [
+    "standalone",
+    "minimal-ui"
+  ],
+  "background_color": "#f5f8fc",
+  "theme_color": "#071d49",
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "/pwa/icons/ethan-cyber-lab-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa/icons/ethan-cyber-lab-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
